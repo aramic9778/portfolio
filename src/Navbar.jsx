@@ -5,7 +5,7 @@ import logo from './A.png'
 
 const Container = styled.div`
  height: 100px;
- background-color: black;
+ background-color: #0cd8a3;
  padding: 20px;
  display: flex;
  flex-direction: row;
@@ -28,27 +28,23 @@ const LogoContainer = styled.div`
 
 const Item = styled.div`
  
-    color: white;
+    color: #043237;
     font-family: 'Frijole', cursive;
     font-size: 35px;
     margin: 50px;
     cursor: pointer;
-    transition: all 0.2s linear;
+    transition: all 0.1s linear;
     &:hover {
-    color: #A88037;
-    transform: scale(1.2);
+    color: white;
+    transform: scale(1.1);
+    border-bottom: 3px solid white;
   }
-    
-
 `
 
 const Logo = styled.div`
     font-family: 'Fontdiner Swanky', cursive;
-    color: #A88037;
+    color: white;
     font-size: 85px;
-    
-    
-
 `
 
 

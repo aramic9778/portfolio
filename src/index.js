@@ -5,10 +5,12 @@ import App from './App';
 
 import reportWebVitals from './reportWebVitals';
 import Navbar from './Navbar';
+import Photoandinfo from './Photoandinfo';
 
 ReactDOM.render(
   <React.StrictMode>
     <Navbar />
+    <Photoandinfo />
   </React.StrictMode>,
   document.getElementById('root')
 );
