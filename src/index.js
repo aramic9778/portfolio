@@ -6,11 +6,13 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Navbar from './Navbar';
 import Photoandinfo from './Photoandinfo';
+import Project from './Project'
 
 ReactDOM.render(
   <React.StrictMode>
     <Navbar />
     <Photoandinfo />
+    <Project />
   </React.StrictMode>,
   document.getElementById('root')
 );
