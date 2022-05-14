@@ -7,12 +7,14 @@ import reportWebVitals from './reportWebVitals';
 import Navbar from './Navbar';
 import Photoandinfo from './Photoandinfo';
 import Project from './Project'
+import Resume from './Resume'
 
 ReactDOM.render(
   <React.StrictMode>
     <Navbar />
     <Photoandinfo />
     <Project />
+    <Resume />
   </React.StrictMode>,
   document.getElementById('root')
 );

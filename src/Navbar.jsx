@@ -1,11 +1,13 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Link } from 'react-scroll'
 import logo from './A.png'
+import { useState } from 'react'
 
 
 const Container = styled.div`
- height: 100px;
- background-color: #85dcba;
+ height: 70px;
+ background-color: #379683;
  padding: 20px;
  display: flex;
  flex-direction: row;
@@ -16,6 +18,7 @@ const ItemContainer = styled.div`
  display: flex;
  align-items: center;
  justify-content: space-between;
+ 
 
 `
 
@@ -28,23 +31,25 @@ const LogoContainer = styled.div`
 
 const Item = styled.div`
  
-    color: #043237;
-    font-family: 'Frijole', cursive;
-    font-size: 35px;
+    
+    color: #EDF5E1;
+
+ font-family: 'Special Elite', cursive;
+    font-size: 29px;
     margin: 50px;
     cursor: pointer;
     transition: all 0.1s linear;
     &:hover {
-    color: #f5f5f5;
+    color: #EDF5E1;
     transform: scale(1.1);
-    border-bottom: 5px dashed #f5f5f5;
+    border-bottom: 5px dashed #EDF5E1;
   }
 `
 
 const Logo = styled.div`
     font-family: 'Fontdiner Swanky', cursive;
-    color: #f5f5f5;
-    font-size: 85px;
+    color: #EDF5E1;
+    font-size: 65px;
 `
 
 

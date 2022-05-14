@@ -6,9 +6,9 @@ import Typical from 'react-typical'
 import './App.css'
 
 const Container = styled.div`
- height: 100vh;
- background-color: #85dcba;
- border-top: 10px dashed white;
+ height: 105vh;
+ background-color: #379683;
+ border-top: 7px dashed #05385B;
  display: flex;
  justify-content: space-between;
  align-items: center;
@@ -22,23 +22,23 @@ const ImageContainer = styled.div`
 const TextContainer = styled.div`
  display: flex;
  background-color: #f5f5f5;
- width: 950px;
- height: 800px;
+ width: 600px;
+ height: 600px;
  border-radius: 50% ;
- margin: 100px;
+ box-shadow: 15px 15px 2px 1px rgba(0, 0, 0, .2);
  justify-content: center;
  align-items: center ;
  flex-direction: column;
- 
+ margin-left: 50px ;
 
 `
 
 
 
 const Text = styled.div`
-font-family: 'Frijole', cursive;
-color: #043237;
-font-size: 40px;
+font-family: 'Special Elite', cursive;
+color: #05385B;
+font-size: 33px;
 margin: 5px; 
 
  
