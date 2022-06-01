@@ -12,6 +12,9 @@
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.4",
     "@testing-library/user-event": "^13.5.0",
+    "aos": "^2.3.4",
+    "emailjs": "^4.0.0",
+    "emailjs-com": "^3.2.0",
     "mui": "0.0.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -22,6 +25,8 @@
     "semantic-ui-react": "^2.1.2",
     "styled-components": "^5.3.5",
     "stylesheet": "^0.9.1",
+    "sweetalert": "^2.1.2",
+    "validator": "^13.7.0",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

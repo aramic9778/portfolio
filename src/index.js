@@ -1,20 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-
 import reportWebVitals from './reportWebVitals';
 import Navbar from './Navbar';
 import Photoandinfo from './Photoandinfo';
 import Project from './Project'
-import Resume from './Resume'
+import Footer from './Footer';
+import Contact from './Contact';
+import About from './About';
+import Resume from './Resume';
 
 ReactDOM.render(
   <React.StrictMode>
     <Navbar />
     <Photoandinfo />
+    <About />
     <Project />
     <Resume />
+    <Contact />
+    <Footer />
   </React.StrictMode>,
   document.getElementById('root')
 );

@@ -1,17 +1,19 @@
+import './App.css'
 import React from 'react'
 import styled from 'styled-components'
 import { Link } from 'react-scroll'
-import logo from './A.png'
-import { useState } from 'react'
 
 
 const Container = styled.div`
+ position: sticky; top: 0;
+ z-index: 4;
  height: 70px;
- background-color: #379683;
+ background-color: #05385B;
  padding: 20px;
  display: flex;
  flex-direction: row;
  justify-content: space-between;
+ 
 `
 
 const ItemContainer = styled.div`
@@ -29,12 +31,12 @@ const LogoContainer = styled.div`
  margin: 30px;
 `
 
-const Item = styled.div`
+const Item = styled.nav`
  
     
     color: #EDF5E1;
 
- font-family: 'Special Elite', cursive;
+    font-family: 'Special Elite', cursive;
     font-size: 29px;
     margin: 50px;
     cursor: pointer;
@@ -60,13 +62,37 @@ const Navbar = () => {
                 <Logo>AA.</Logo>
             </LogoContainer>
             <ItemContainer>
-                <Item>Home</Item>
-                <Item>Projects</Item>
-                <Item>Resume</Item>
-                <Item>Contact</Item>
-                <Item>About Me</Item>
-            </ItemContainer>
 
+                <Item><Link to="home"
+                    spy={true}
+                    smooth={true}
+                    offset={-100}
+                    duration={1500}>Home</Link></Item>
+                <Item>
+
+                    <Link to="projects"
+                        spy={true}
+                        smooth={true}
+                        offset={-80}
+                        duration={1500}>Projects</Link>
+                </Item>
+                <Item><Link to="resume"
+                    spy={true}
+                    smooth={true}
+                    offset={-80}
+                    duration={1500}>Resume</Link></Item>
+                <Item><Link to="contact"
+                    spy={true}
+                    smooth={true}
+                    offset={-120}
+                    duration={1500}>Contact</Link></Item>
+                <Item>
+                    <Link to="about"
+                        spy={true}
+                        smooth={true}
+                        offset={-120}
+                        duration={1500}>About Me</Link></Item>
+            </ItemContainer>
         </Container>
     )
 }

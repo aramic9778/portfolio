@@ -1,16 +1,16 @@
 import React from 'react'
 import styled from 'styled-components'
-import logo from './react4.png'
+import logo from './images/web.png'
 
 import Typical from 'react-typical'
 import './App.css'
+import { Element } from 'react-scroll'
 
 const Container = styled.div`
- height: 105vh;
- background-color: #379683;
- border-top: 7px dashed #05385B;
+ height: 95vh;
+ background-color: #05385B;
  display: flex;
- justify-content: space-between;
+ justify-content: space-evenly;
  align-items: center;
  
 `
@@ -21,11 +21,11 @@ const ImageContainer = styled.div`
 
 const TextContainer = styled.div`
  display: flex;
- background-color: #f5f5f5;
+ background-color: white;
  width: 600px;
  height: 600px;
  border-radius: 50% ;
- box-shadow: 15px 15px 2px 1px rgba(0, 0, 0, .2);
+ box-shadow: 15px 15px 2px 1px hsla(0,0%,0%,.3);
  justify-content: center;
  align-items: center ;
  flex-direction: column;
@@ -45,8 +45,8 @@ margin: 5px;
 `
 const Image = styled.img`
 
- height: 650px ;
- width: auto;
+ height: 550px;
+
 
  
 `
@@ -55,40 +55,42 @@ const Image = styled.img`
 const Photoandinfo = () => {
 
     return (
-        <Container>
+        <Element id='home' name='home'>
+            <Container>
 
-            <TextContainer>
-                <Text>
-                    Hey, there!
-                </Text>
-                <Text>
-                    I'm Aram Antonyan
-                </Text>
+                <TextContainer>
+                    <Text>
+                        Hey, there!
+                    </Text>
+                    <Text>
+                        I'm Aram Antonyan
+                    </Text>
 
-                <Typical
-                    className="typic"
-                    loop={Infinity}
-                    steps={[
-                        'Designer✏️',
-                        1000,
-                        'Frontend Developer😍',
-                        1000,
-                        'Web Developer🕸️',
-                        1000,
-                        'Fullstack Developer👨‍💻(goals😴💭)',
-                        1000,
-                    ]}
-                />
-            </TextContainer>
+                    <Typical
+                        className="typic"
+                        loop={Infinity}
+                        steps={[
+                            'Designer✏️',
+                            1000,
+                            'Frontend Developer😍',
+                            1000,
+                            'Web Developer🕸️',
+                            1000,
+                            'Fullstack Developer👨‍💻(goals😴💭)',
+                            1000,
+                        ]}
+                    />
+                </TextContainer>
 
 
-            <ImageContainer>
+                <ImageContainer>
 
-                <Image src={logo}>
+                    <Image src={logo}>
 
-                </Image>
-            </ImageContainer>
-        </Container>
+                    </Image>
+                </ImageContainer>
+            </Container>
+        </Element>
     )
 }
 
