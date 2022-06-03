@@ -69,6 +69,7 @@ padding: 10px;
 margin-bottom: 20px;
 margin-top: 20px;
 margin-right: 20px;
+${mobile({ margin: "0px", width: "200px", marginBottom: "20px" })}
 background-color: transparent;
 ::placeholder { 
   color: #EDF5E1;
@@ -85,7 +86,7 @@ margin-bottom: 20px;
 margin-top: 20px;
 margin-right: 20px;
 background-color: transparent;
-
+${mobile({ margin: "0px", width: "200px", marginBottom: "20px" })}
   transition: 0.5s;
 ::placeholder { 
   color: #EDF5E1;
@@ -180,7 +181,7 @@ const Contact = () => {
             <div style={{
 
               color: '#EDF5E1',
-              fontFamily: 'Special Elite',
+              fontFamily: 'Indie Flower',
               fontSize: "15px",
             }}>{emailError}</div>
 

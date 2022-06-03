@@ -22,7 +22,7 @@ const Title = styled.h1`
   -webkit-text-stroke: 2.5px #EDF5E1;
   
   text-align: center;
-  font-family: 'Indie Flower', cursive;;
+  font-family: 'Indie Flower', cursive;
   font-size: 60px;
   ${mobile({ fontSize: "40px", WebkitTextStroke: "1.5px #EDF5E1" })}
 `
@@ -33,7 +33,7 @@ display: flex;
 align-items: center ;
 justify-content: center ;
 ${mobile({ flexDirection: "column", width: "auto", margin: "0px" })}
-${tablet({ flexDirection: "column", width: "auto", margin: "0px" })}
+${tablet({ flexDirection: "column", width: "auto", margin: "0px", marginTop: "40px" })}
 
   
 `
@@ -45,6 +45,7 @@ const ImageContainer = styled.div`
   justify-content: center;
   align-items: center ;
   ${mobile({ flexDirection: "column", width: "auto", margin: "0px", marginBottom: "25px" })}
+  ${tablet({ width: "auto", margin: "0px" })}
 `
 
 const TextandImage = styled.div`

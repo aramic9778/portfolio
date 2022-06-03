@@ -62,7 +62,8 @@ const Info = styled.div`
 const Icon = styled.div`
  
   color: #EDF5E1;
-  
+  font-family: 'Indie Flower';
+  font: cursive;
   margin: 10px;
   font-size: 30px ;
   ${mobile({ fontSize: "20px" })}
@@ -184,6 +185,7 @@ transition: all 0.5s ease;
 ${mobile({ width: "200px", height: "70px" })}
   &:hover {
     width: 340px;
+    ${mobile({ width: "250px" })}
   }
   &:active {
     box-shadow: 0px 0px 0px 0px hsla(0,0%,0%,.2);
