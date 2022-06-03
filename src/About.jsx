@@ -4,13 +4,16 @@ import logo3 from './images/IMG_1357.JPG'
 import { Element } from 'react-scroll'
 import Aos from "aos"
 import "aos/dist/aos.css";
+import { mobile, tablet } from './responsive';
+
 
 const Container = styled.div` 
  background-color: #05385B;
  display:  flex; 
  flex-direction: column;
  height: auto ;
- 
+ ${mobile({ height: "auto" })}
+ ${tablet({ height: "auto" })}
 `
 
 const Title = styled.h1`
@@ -21,6 +24,7 @@ const Title = styled.h1`
   text-align: center;
   font-family: 'Special Elite', cursive;
   font-size: 60px;
+  ${mobile({ fontSize: "40px", WebkitTextStroke: "1.5px #EDF5E1" })}
 `
 
 const TextContainer = styled.div`
@@ -28,6 +32,9 @@ width: 800px;
 display: flex;
 align-items: center ;
 justify-content: center ;
+${mobile({ flexDirection: "column", width: "auto", margin: "0px" })}
+${tablet({ flexDirection: "column", width: "auto", margin: "0px" })}
+
   
 `
 
@@ -37,13 +44,15 @@ const ImageContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center ;
+  ${mobile({ flexDirection: "column", width: "auto", margin: "0px", marginBottom: "25px" })}
 `
 
 const TextandImage = styled.div`
 display: flex;
 flex-direction: row;
 justify-content: center;
-  
+${mobile({ flexDirection: "column" })}
+${tablet({ flexDirection: "column" })}
 `
 
 const Text = styled.div`
@@ -55,7 +64,9 @@ color: #05385B;
 text-align: left ;
 font-weight: bold;
 font-family: 'Special Elite', cursive;
-font-weight: 2 ;  
+font-weight: 2 ; 
+${mobile({ fontSize: "15px", width: "250px" })}
+${tablet({ fontSize: "25px", width: "650px" })}
 `
 
 
@@ -64,14 +75,16 @@ position: absolute;
 width: 600px;
 object-fit: cover ;
 border-radius: 11%;
+${mobile({ width: "250px" })}
 `
 
 const Image2 = styled.div`
 box-shadow: 20px 38px 34px -26px hsla(0,0%,0%,.2);
-border-radius: 205px 25px 215px 15px/20px 235px 1px 255px;
+border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
 width: 680px;
 height: 480px;
 background-color:  #EDF5E1;
+${mobile({ width: "300px", height: "280px" })}
 
 `
 const Image3 = styled.div`
@@ -80,6 +93,8 @@ border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
 width: 750px;
 height: 480px;
 background-color:  #EDF5E1;
+${mobile({ width: "300px", height: "280px" })}
+${tablet({ width: "680px", height: "480px" })}
 
 `
 

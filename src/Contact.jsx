@@ -10,6 +10,7 @@ import validator from 'validator'
 import Aos from "aos"
 import "aos/dist/aos.css";
 import { Element } from 'react-scroll'
+import { mobile, tablet } from './responsive';
 
 const Container = styled.div`
  background-color: #05385B;
@@ -17,6 +18,8 @@ const Container = styled.div`
  flex-direction: row;
  
  justify-content: space-evenly;
+ ${mobile({ flexDirection: "column", height: "auto" })}
+ ${tablet({ flexDirection: "column", height: "auto" })}
 
 `
 const TextH = styled.h1`
@@ -36,18 +39,24 @@ margin-top: 15px ;
  text-align: left ;
  font-family: 'Special Elite', cursive;
  font-weight: 2 ;
+ ${mobile({ textAlign: "center" })}
 `
 
 const ContactInfoBlock = styled.div` 
  display: flex;
  flex-direction: column;
+ ${mobile({ alignItems: "center", justifyContent: "center" })}
+ ${tablet({ margin: "30px" })}
 
 `
 const ContactFormBlock = styled.form`
  display: flex;
  flex-direction: column;
+ ${mobile({ alignItems: "center", justifyContent: "center" })}
+ ${tablet({ margin: "30px" })}
 `
 const NameandEmail = styled.div`
+${mobile({ display: "flex", alignItems: "center", flexDirection: "column" })}
 
 
 `
@@ -108,6 +117,7 @@ const Button = styled.input`
      color: #EDF5E1; 
      background-color: transparent ;
   }
+  ${mobile({})}
 `
 
 

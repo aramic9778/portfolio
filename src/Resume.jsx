@@ -8,6 +8,9 @@ import InterestsIcon from '@mui/icons-material/Interests';
 import { keyframes } from "styled-components"
 import styled from 'styled-components'
 import { Element } from 'react-scroll'
+import DownloadIcon from '@mui/icons-material/Download';
+import ExampleDoc from './resume.pdf'
+import { mobile, tablet } from './responsive';
 import './App.css'
 import Aos from "aos"
 import "aos/dist/aos.css";
@@ -18,18 +21,18 @@ const Container = styled.div`
  background-color: #05385B;
  display:  flex;
  flex-direction: column;
- 
  align-items: center ;
+ 
 `
 
 const Title = styled.h1`
   color: #05385B;
-  margin-bottom:15px;
   -webkit-text-stroke: 2.5px #EDF5E1;
   
   text-align: center;
   font-family: 'Special Elite', cursive;
   font-size: 60px;
+  ${mobile({ fontSize: "40px", WebkitTextStroke: "1.5px #EDF5E1" })}
 `
 
 const Options = styled.div`
@@ -39,7 +42,8 @@ justify-content: center;
 align-items: center ;
 border-right: 4px solid #05385B;
 width: 25%auto;
-
+${mobile({ borderRight: "0px" })}
+${tablet({ borderRight: "0px" })}
 
   
 `
@@ -51,6 +55,7 @@ const Info = styled.div`
   align-items: center ;
   
   
+  
 `
 
 const InfoandOptions = styled.div`
@@ -58,12 +63,13 @@ const InfoandOptions = styled.div`
   flex-direction: row;
   border: solid;
   width: 60%;
-
+  margin-bottom: 40px ;
   height: 600px ;
-  margin: 40px;
   background-color: #EDF5E1;
   border-color: #05385B;
-  box-shadow: 20px 38px 34px -26px hsla(0,0%,0%,.7);
+  
+  ${mobile({ flexDirection: "column", width: "98%", height: "auto", justifyContent: "center" })}
+  ${tablet({ flexDirection: "column", width: "90%", height: "auto", justifyContent: "center" })}
   
 `
 
@@ -71,7 +77,7 @@ const Education = styled.div`
   display: flex;
   flex-direction: column ;
   justify-content: space-evenly;
-  
+  ${mobile({ marginRight: "8px", marginLeft: "8px" })}
   
   
 `
@@ -81,6 +87,7 @@ const Employment = styled.div`
   flex-direction: column;
   margin: 20px;
   
+  
 `
 
 const Skills = styled.div`
@@ -88,6 +95,7 @@ const Skills = styled.div`
   
   display: flex;
   flex-direction: row ;
+  ${mobile({ flexDirection: "column" })}
   
   
  
@@ -107,6 +115,7 @@ const List = styled.div`
   margin-bottom: 5px;
   font-size: 15px;
   font-family: 'Special Elite', cursive;
+  ${mobile({ fontSize: "13px", marginBottom: "0px" })}
   
 `
 
@@ -117,6 +126,7 @@ const Place = styled.h1`
   font-family: 'Special Elite', cursive;
   border-top: 4px solid #05385B;
   padding-top: 4px;
+  ${mobile({ fontSize: "14px", paddingTop: "0px", marginBottom: "0px" })}
   
   
 `
@@ -131,6 +141,7 @@ const Location = styled.h2`
   border-top: 1px solid #05385B;
   padding-top: 2px;
   text-align: center ;
+  ${mobile({ fontSize: "13px", paddingBttom: "0px", marginBottom: "5px" })}
   
 `
 
@@ -142,7 +153,7 @@ const Date = styled.div`
   border-radius: 15px;
   padding: 8px;
   margin: 10px;
-  
+  ${mobile({ fontSize: "10px" })}
 `
 
 const SchoolandDate = styled.div`
@@ -158,6 +169,7 @@ const SchoolName = styled.h1`
   margin-bottom: 1px;
   font-size: 20px;
   font-family: 'Special Elite', cursive;
+  ${mobile({ fontSize: "15px" })}
   
   
 `
@@ -166,6 +178,7 @@ const Degree = styled.div`
   font-size: 16px;
   color: #05385B;
   font-family: 'Special Elite', cursive;
+  ${mobile({ fontSize: "13px" })}
   
 `
 
@@ -175,6 +188,7 @@ const Gpa = styled.div`
   font-size: 14px;
   color: #05385B;
   font-family: 'Special Elite', cursive;
+  ${mobile({ fontSize: "12px" })}
 `
 
 const DegreeandGpa = styled.div`
@@ -187,6 +201,7 @@ const Unit = styled.div`
   padding-bottom: 15px;
   border-top: 1px solid #05385B;
   padding-top: 15px;
+  ${mobile({ margin: "2px", paddingTop: "5px", paddingBottom: "5px" })}
   
 `
 
@@ -235,6 +250,7 @@ const SkillContainer = styled.div`
   margin: 60px;
   box-shadow: inset 0px 1px 1px rgba(0,0,0,0.7),
     0px 1px rgba(255,255,255,1);
+    ${mobile({ margin: "30px" })}
   
 `
 
@@ -252,6 +268,8 @@ const Option = styled.button`
   align-items: center ;
   cursor: pointer;
   transition: all 0.6s ease;
+  ${mobile({ marginTop: "0px", marginBottom: "0px" })}
+  ${tablet({ marginTop: "0px", marginBottom: "0px", fontSize: "30px" })}
   &:hover {
     color: #EDF5E1;
     background-color: #05385B;
@@ -261,6 +279,7 @@ const Option = styled.button`
     background-color: #05385B;
     outline: 0;
   }
+  
 
 `
 
@@ -279,6 +298,7 @@ const Interest = styled.div`
   font-size: 20px;
   font-family: 'Special Elite', cursive;
   width: 70%;
+  ${mobile({ fontSize: "15px" })}
 `
 
 const InterestUnit = styled.div`
@@ -292,6 +312,52 @@ const InterestUnit = styled.div`
   padding-top: 15px;
   
 `
+
+
+const Download = styled.button`
+   color: #05385B;
+   background-color: #EDF5E1;
+   cursor: pointer;
+   padding: 15px;
+   font-family: 'Special Elite', cursive;
+   font-size: 20px ;
+   border-color: #EDF5E1;
+   box-shadow: 5px 5px 30px rgba(255, 255, 255, 0.2);
+   transition: all 0.5s ease;
+   margin-bottom: 40px ;
+   &:hover {
+     box-shadow: none;
+    color: #EDF5E1;
+    background-color: #05385B;
+  }
+
+  ${mobile({ fontSize: "15px", padding: "10px" })}
+
+`
+const Down = styled.div`
+   
+   display: flex;
+   align-items: center;
+   flex-wrap: 'wrap';
+   
+  
+`
+const Link = styled.a`
+   
+   
+   
+  
+`
+
+const Container2 = styled.div`
+   
+   display:  flex;
+ flex-direction: column;
+ align-items: center ;
+   
+  
+`
+
 
 
 
@@ -309,7 +375,18 @@ const Resume = () => {
   return (
     <Element id='resume' name='resume'>
       <Container>
-        <Title data-aos="fade-up">VIRTUAL RESUME</Title>
+        <Container2 data-aos="fade-up">
+          <Title >VIRTUAL RESUME</Title>
+          <Link href={ExampleDoc} download>
+            <Download >
+              <Down>
+                <DownloadIcon style={{
+                  paddingRight: "7px"
+                }} />
+                Download PDF
+              </Down></Download>
+          </Link>
+        </Container2>
         <InfoandOptions data-aos="fade-up">
           <Options>
             <Option value='education' id='education' autoFocus onClick={handleClick}><SchoolIcon></SchoolIcon> Education</Option>
@@ -395,6 +472,7 @@ const Resume = () => {
 
           </Info>
         </InfoandOptions>
+
       </Container>
     </Element>
 

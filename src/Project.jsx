@@ -11,6 +11,7 @@ import './App.css'
 import Aos from "aos"
 import "aos/dist/aos.css";
 import { Element } from 'react-scroll'
+import { mobile, tablet } from './responsive';
 
 
 const Container = styled.div`
@@ -28,6 +29,7 @@ const Title = styled.h1`
   text-align: center;
   font-family: 'Special Elite', cursive;
   font-size: 60px;
+  ${mobile({ fontSize: "40px", WebkitTextStroke: "1.5px #EDF5E1" })}
 `
 
 const ProjectContainer = styled.div`
@@ -52,9 +54,10 @@ const Info = styled.div`
   justify-content: center;
   display: flex;
   flex-direction: column;
-  
-  
- 
+  ${mobile({ opacity: "1" })}
+  ${tablet({ opacity: "1" })}
+
+
 `
 const Icon = styled.div`
  
@@ -62,9 +65,10 @@ const Icon = styled.div`
   
   margin: 10px;
   font-size: 30px ;
-  
+  ${mobile({ fontSize: "20px" })}
 
-  
+
+
 `
 const Image = styled.img`
 width: 800px;
@@ -73,6 +77,8 @@ object-fit: cover ;
 z-index: 2;
 border-radius: 11%;
 transition: all 0.5s ease;
+${mobile({ opacity: "0.3", width: "300px", height: "200px" })}
+${tablet({ opacity: "0.3", width: "550px", height: "300px" })}
 `
 const ImageContainer = styled.div`
  
@@ -88,6 +94,8 @@ border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
   &:hover ${Info}{
     opacity: 1;
   }
+
+  
   
 `
 
@@ -103,6 +111,7 @@ color: #EDF5E1;
  font-weight: bold;
  font-family: 'Special Elite', cursive;
  font-weight: 2 ;
+ ${mobile({ fontSize: "18px" })}
 `
 
 
@@ -121,6 +130,7 @@ color:#EDF5E1;
  text-align: left ;
  font-family: 'Special Elite', cursive;
  font-size: 35px ;
+ ${mobile({ fontSize: "20px" })}
  
 `
 
@@ -129,6 +139,7 @@ color: #EDF5E1;
  text-align: center ;
  font-size: 30px ;
  font-family: 'Special Elite', cursive;
+ ${mobile({ fontSize: "15px" })}
  
 `
 
@@ -170,6 +181,7 @@ flex-direction: row ;
 color: #EDF5E1;
 align-items: center ;
 transition: all 0.5s ease;
+${mobile({ width: "200px", height: "70px" })}
   &:hover {
     width: 340px;
   }
@@ -202,6 +214,7 @@ color: #EDF5E1;
     font-size: 10px;
 
   }
+  ${mobile({ fontSize: "15px" })}
   
 
 `

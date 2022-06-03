@@ -5,6 +5,9 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import styled from 'styled-components'
 import "aos/dist/aos.css";
 
+import { mobile, tablet } from './responsive';
+
+
 const Container = styled.div`
  background-color: #05385B;
  display:  flex; 
@@ -13,12 +16,14 @@ const Container = styled.div`
  align-items: center;
  justify-content: center;
 
+
 `
 const Logo = styled.div`
     font-family: 'Fontdiner Swanky', cursive;
     
     color: #EDF5E1;
     font-size: 65px;
+    
 `
 
 const IconContainer = styled.div`
@@ -26,29 +31,31 @@ const IconContainer = styled.div`
     flex-direction: row;
     margin-bottom: 10px;
     
+    ${mobile({ display: "none" })}
 
 `
 
 const Icon = styled.div`
     margin: 15px;
+    width: 50px;
     color: #EDF5E1;
+    transition: all 0.5s ease;
+    text-align: center ;
+    padding: 5px;
     &:hover {
-    color: #EDF5E1;
     cursor: pointer;
-    
+    background-color: #EDF5E1;
+    border-radius: 8px ;
+    color: #05385B;
+   
   }
 `
 
 const Transition = styled.a`
 color: #EDF5E1;
-&:hover {
-    color: #EDF5E1;
-    
-  }
   &:active {
     color: #EDF5E1;
     font-size: 10px;
-
   }
 `
 const Text = styled.div`
@@ -58,6 +65,8 @@ margin-bottom: 3px;
  text-align: center ;
  font-family: 'Special Elite', cursive;
  font-weight: 2 ;
+ ${mobile({ margin: "5px" })}
+ 
 `
 
 

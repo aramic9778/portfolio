@@ -1,9 +1,19 @@
 .typic {
   font-family: 'Special Elite',
     cursive;
+  color: hsl(204, 90%, 19%);
+  font-size: 16px;
+  margin: 5px;
+
+}
+
+.typic2 {
+  font-family: 'Special Elite',
+    cursive;
   color: #05385B;
   font-size: 33px;
   margin: 5px;
+
 }
 
 .ttt {

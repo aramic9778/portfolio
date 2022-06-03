@@ -1,10 +1,11 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
 import logo from './images/web.png'
 
 import Typical from 'react-typical'
 import './App.css'
 import { Element } from 'react-scroll'
+import { mobile, tablet } from './responsive';
 
 const Container = styled.div`
  height: 95vh;
@@ -12,10 +13,13 @@ const Container = styled.div`
  display: flex;
  justify-content: space-evenly;
  align-items: center;
- 
+ ${mobile({ flexDirection: "column" })}
+ ${tablet({ flexDirection: "column" })}
+
 `
 const ImageContainer = styled.div`
     margin: 100px;
+    ${mobile({ margin: "0px" })}
  
 `
 
@@ -30,6 +34,8 @@ const TextContainer = styled.div`
  align-items: center ;
  flex-direction: column;
  margin-left: 50px ;
+ ${mobile({ width: "300px", height: "200px", marginLeft: "0px", borderRadius: "0%" })}
+ ${tablet({ width: "600px", height: "300px", marginLeft: "0px", borderRadius: "0%" })}
 
 `
 
@@ -40,19 +46,34 @@ font-family: 'Special Elite', cursive;
 color: #05385B;
 font-size: 33px;
 margin: 5px; 
+${mobile({ fontSize: "16px" })}
 
- 
+
 `
 const Image = styled.img`
 
  height: 550px;
-
+${mobile({ height: "300px" })}
+${tablet({ height: "400px" })}
 
  
 `
 
 
 const Photoandinfo = () => {
+
+    const [isMobile, setIsMobile] = useState(window.innerWidth < 450);
+
+    {/* Performs similarly to componentDidMount in classes */ }
+    useEffect(() => {
+        window.addEventListener("resize", () => {
+            const ismobile = window.innerWidth < 450;
+            if (ismobile !== isMobile) setIsMobile(ismobile);
+        }, false);
+    }, [isMobile]);
+
+
+
 
     return (
         <Element id='home' name='home'>
@@ -67,7 +88,7 @@ const Photoandinfo = () => {
                     </Text>
 
                     <Typical
-                        className="typic"
+                        className={`${isMobile ? "typic" : "typic2"}`}
                         loop={Infinity}
                         steps={[
                             'Designer✏️',
