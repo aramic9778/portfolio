@@ -389,7 +389,7 @@ const Resume = () => {
         </Container2>
         <InfoandOptions data-aos="fade-up">
           <Options>
-            <Option value='education' id='education' autoFocus onClick={handleClick}><SchoolIcon></SchoolIcon> Education</Option>
+            <Option value='education' id='education' onClick={handleClick}><SchoolIcon></SchoolIcon> Education</Option>
             <Option value='employment' id='employment' onClick={handleClick}><WorkIcon></WorkIcon> Employment</Option>
             <Option value='skills' id='skills' onClick={handleClick}><BadgeIcon></BadgeIcon> Skills</Option>
             <Option value='interests' id='interests' onClick={handleClick}><InterestsIcon></InterestsIcon> Interests/Volunteering</Option>

@@ -13,7 +13,7 @@ import Resume from './Resume';
 
 window.onbeforeunload = function () {
   window.scrollTo(0, 0);
-}
+};
 
 
 ReactDOM.render(
