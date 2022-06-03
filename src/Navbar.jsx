@@ -48,7 +48,7 @@ const Item = styled.nav`
     
     color: #EDF5E1;
 
-    font-family: 'Special Elite', cursive;
+    font-family: 'Indie Flower', cursive;;
     font-size: 29px;
     margin: 55px;
     cursor: pointer;

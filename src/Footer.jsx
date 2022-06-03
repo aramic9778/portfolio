@@ -63,7 +63,7 @@ font-size: 16px ;
 color: #EDF5E1;
 margin-bottom: 3px;
  text-align: center ;
- font-family: 'Special Elite', cursive;
+ font-family: 'Indie Flower', cursive;;
  font-weight: 2 ;
  ${mobile({ margin: "5px" })}
  

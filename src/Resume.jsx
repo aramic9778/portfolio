@@ -30,7 +30,7 @@ const Title = styled.h1`
   -webkit-text-stroke: 2.5px #EDF5E1;
   
   text-align: center;
-  font-family: 'Special Elite', cursive;
+  font-family: 'Indie Flower', cursive;;
   font-size: 60px;
   ${mobile({ fontSize: "40px", WebkitTextStroke: "1.5px #EDF5E1" })}
 `
@@ -114,7 +114,7 @@ const List = styled.div`
   color: #05385B;
   margin-bottom: 5px;
   font-size: 15px;
-  font-family: 'Special Elite', cursive;
+  font-family: 'Indie Flower', cursive;;
   ${mobile({ fontSize: "13px", marginBottom: "0px" })}
   
 `
@@ -123,7 +123,7 @@ const Place = styled.h1`
   color: #05385B;
   margin-bottom: 1px;
   font-size: 20px;
-  font-family: 'Special Elite', cursive;
+  font-family: 'Indie Flower', cursive;;
   border-top: 4px solid #05385B;
   padding-top: 4px;
   ${mobile({ fontSize: "14px", paddingTop: "0px", marginBottom: "0px" })}
@@ -135,7 +135,7 @@ const Location = styled.h2`
   color: #05385B;
   margin-bottom: 10px;
   font-size: 17px;
-  font-family: 'Special Elite', cursive;
+  font-family: 'Indie Flower', cursive;;
   border-bottom: 1px solid #05385B;
   padding-bottom: 2px;
   border-top: 1px solid #05385B;
@@ -149,7 +149,7 @@ const Date = styled.div`
   font-size: 13px;
   background-color: #05385B;
   color: #EDF5E1;
-  font-family: 'Special Elite', cursive;
+  font-family: 'Indie Flower', cursive;;
   border-radius: 15px;
   padding: 8px;
   margin: 10px;
@@ -168,7 +168,7 @@ const SchoolName = styled.h1`
   color: #05385B;
   margin-bottom: 1px;
   font-size: 20px;
-  font-family: 'Special Elite', cursive;
+  font-family: 'Indie Flower', cursive;;
   ${mobile({ fontSize: "15px" })}
   
   
@@ -177,7 +177,7 @@ const SchoolName = styled.h1`
 const Degree = styled.div`
   font-size: 16px;
   color: #05385B;
-  font-family: 'Special Elite', cursive;
+  font-family: 'Indie Flower', cursive;;
   ${mobile({ fontSize: "13px" })}
   
 `
@@ -187,7 +187,7 @@ const Gpa = styled.div`
   font-weight: bold ;
   font-size: 14px;
   color: #05385B;
-  font-family: 'Special Elite', cursive;
+  font-family: 'Indie Flower', cursive;;
   ${mobile({ fontSize: "12px" })}
 `
 
@@ -214,7 +214,7 @@ const SkillName = styled.div`
   width:210px;
   
   
-  font-family: 'Special Elite', cursive;
+  font-family: 'Indie Flower', cursive;;
         
   
 `
@@ -258,7 +258,7 @@ const Option = styled.button`
   margin-top: 20px;
   margin-bottom: 20px;
   color: #05385B;
-  font-family: 'Special Elite', cursive;
+  font-family: 'Indie Flower', cursive;;
   background-color: transparent;
   width: 100%;
   height: 60px;
@@ -296,7 +296,7 @@ const Interest = styled.div`
   color: #05385B;
   margin-bottom: 1px;
   font-size: 20px;
-  font-family: 'Special Elite', cursive;
+  font-family: 'Indie Flower', cursive;;
   width: 70%;
   ${mobile({ fontSize: "15px" })}
 `
@@ -319,7 +319,7 @@ const Download = styled.button`
    background-color: #EDF5E1;
    cursor: pointer;
    padding: 15px;
-   font-family: 'Special Elite', cursive;
+   font-family: 'Indie Flower', cursive;;
    font-size: 20px ;
    border-color: #EDF5E1;
    box-shadow: 5px 5px 30px rgba(255, 255, 255, 0.2);

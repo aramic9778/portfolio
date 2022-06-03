@@ -27,7 +27,7 @@ const Title = styled.h1`
   -webkit-text-stroke: 2.5px #EDF5E1;
   
   text-align: center;
-  font-family: 'Special Elite', cursive;
+  font-family: 'Indie Flower', cursive;;
   font-size: 60px;
   ${mobile({ fontSize: "40px", WebkitTextStroke: "1.5px #EDF5E1" })}
 `
@@ -109,7 +109,7 @@ color: #EDF5E1;
  text-align: center;
  margin-top: 20px ;
  font-weight: bold;
- font-family: 'Special Elite', cursive;
+ font-family: 'Indie Flower', cursive;;
  font-weight: 2 ;
  ${mobile({ fontSize: "18px" })}
 `
@@ -128,7 +128,7 @@ margin-bottom: 40px ;
 const ProjectName = styled.h1`
 color:#EDF5E1;
  text-align: left ;
- font-family: 'Special Elite', cursive;
+ font-family: 'Indie Flower', cursive;;
  font-size: 35px ;
  ${mobile({ fontSize: "20px" })}
  
@@ -138,7 +138,7 @@ const ProjectDesc = styled.h2`
 color: #EDF5E1;
  text-align: center ;
  font-size: 30px ;
- font-family: 'Special Elite', cursive;
+ font-family: 'Indie Flower', cursive;;
  ${mobile({ fontSize: "15px" })}
  
 `

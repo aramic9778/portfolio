@@ -42,7 +42,7 @@ const TextContainer = styled.div`
 
 
 const Text = styled.div`
-font-family: 'Special Elite', cursive;
+font-family: 'Indie Flower', cursive;;
 color: #05385B;
 font-size: 33px;
 margin: 5px; 

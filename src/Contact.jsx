@@ -27,7 +27,7 @@ const TextH = styled.h1`
 color: #EDF5E1;
 margin-bottom: 3px;
  
- font-family: 'Special Elite', cursive;
+ font-family: 'Indie Flower', cursive;;
  font-weight: 2 ;
 
 `
@@ -37,7 +37,7 @@ color: #EDF5E1;
 margin-bottom: 15px;
 margin-top: 15px ;
  text-align: left ;
- font-family: 'Special Elite', cursive;
+ font-family: 'Indie Flower', cursive;;
  font-weight: 2 ;
  ${mobile({ textAlign: "center" })}
 `

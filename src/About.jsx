@@ -22,7 +22,7 @@ const Title = styled.h1`
   -webkit-text-stroke: 2.5px #EDF5E1;
   
   text-align: center;
-  font-family: 'Special Elite', cursive;
+  font-family: 'Indie Flower', cursive;;
   font-size: 60px;
   ${mobile({ fontSize: "40px", WebkitTextStroke: "1.5px #EDF5E1" })}
 `
@@ -63,7 +63,7 @@ width: 700px;
 color: #05385B;
 text-align: left ;
 font-weight: bold;
-font-family: 'Special Elite', cursive;
+font-family: 'Indie Flower', cursive;;
 font-weight: 2 ; 
 ${mobile({ fontSize: "15px", width: "250px" })}
 ${tablet({ fontSize: "25px", width: "650px" })}
