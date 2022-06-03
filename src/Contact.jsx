@@ -169,7 +169,7 @@ const Contact = () => {
           <Text><LocationOnIcon></LocationOnIcon> Address: 11230 NE 132nd St, Kirkland, Washington, 98034</Text>
           <Text><LocalPhoneIcon></LocalPhoneIcon> Phone: +1(425)496-50-83</Text>
           <Text><EmailIcon></EmailIcon> Email: aramic9778@gmail.com</Text>
-          <Text><WebIcon></WebIcon> Website: https://aramantonyan.pw</Text>
+          <Text><WebIcon></WebIcon> Website: https://aramic9778.github.io/portfolio/</Text>
         </ContactInfoBlock>
         <ContactFormBlock data-aos="fade-up" ref={form}>
           <TextH>Contact Form</TextH>
