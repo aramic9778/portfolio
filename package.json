@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
-  "homepage": "aramic9778.github.io",
+  "homepage": "https://aramic9778.github.io/portfolio",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.9.0",
