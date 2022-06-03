@@ -10,7 +10,14 @@ import Contact from './Contact';
 import About from './About';
 import Resume from './Resume';
 
+
+window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+}
+
+
 ReactDOM.render(
+
   <React.StrictMode>
     <Navbar />
     <Photoandinfo />
@@ -27,3 +34,4 @@ ReactDOM.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+
